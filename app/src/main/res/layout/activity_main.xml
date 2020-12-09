@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <LinearLayout
                 android:id="@+id/layout_info"
@@ -44,7 +44,7 @@
                             android:layout_alignStart="@id/textView8"
                             android:layout_marginTop="10dp"
                             android:background="@color/white"
-                            android:ems="6"
+                            android:ems="7"
                             android:hint="Hobi"
                             android:inputType="textPersonName" />
 
@@ -56,7 +56,7 @@
                             android:layout_alignStart="@id/textView8"
                             android:layout_marginTop="10dp"
                             android:background="@color/white"
-                            android:ems="6"
+                            android:ems="7"
                             android:hint="Gender"
                             android:inputType="textShortMessage|textPersonName"
                             android:text="" />
@@ -138,7 +138,7 @@
                     android:layout_weight="0.50">
 
                     <ImageButton
-                        android:id="@+id/mapButton2"
+                        android:id="@+id/ButtonMap"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
@@ -148,7 +148,7 @@
                         android:id="@+id/textView16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/mapButton2"
+                        android:layout_below="@+id/ButtonMap"
                         android:layout_centerHorizontal="true"
                         android:layout_weight="0.50"
                         android:text="Lihat Map"
@@ -260,7 +260,7 @@
                     android:layout_weight="0.50">
 
                     <ImageButton
-                        android:id="@+id/buttonLogout"
+                        android:id="@+id/buttonWebView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
@@ -270,7 +270,7 @@
                         android:id="@+id/textlogout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/buttonLogout"
+                        android:layout_below="@+id/buttonWebView"
                         android:layout_centerHorizontal="true"
                         android:layout_weight="0.50"
                         android:text="Browser"
@@ -278,9 +278,7 @@
                         android:textStyle="bold" />
                 </RelativeLayout>
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 
