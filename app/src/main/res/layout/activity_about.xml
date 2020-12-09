@@ -1,0 +1,296 @@
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home2"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TableRow android:padding="5dip">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:text="Beranda"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/AboutBeranda"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:background="#fff"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="/m relative, linier, frame, notif"
+            android:textColor="#000" />
+    </TableRow>
+        <TableRow>
+
+            <EditText
+                android:id="@+id/AboutBeranda1"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m auto+multicomplete,progressdialog"
+                android:textColor="#000" />
+        </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Akun"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/akunAbout"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="/m relative, frame"
+            android:textColor="#000" />
+    </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/AboutAkun1"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m listview, date, time, dialog"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/AboutAbout"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="/m absolute, table layout, table row"
+            android:textColor="#000" />
+
+    </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/About1"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m modif dialog"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Info"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/AboutPicture"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m ticker, spinner"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Jadwal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/AboutJadwal"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m Scroll View, Fragment"
+                android:textColor="#000" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/AboutJadwal1"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m ViewPager, TabLayout"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Map"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/AboutMap"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m Fragment + MapView"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Web"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/AboutWeb1"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m WebView"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Picture"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/AboutPicture1"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="/m GridView + ImageView"
+                android:textColor="#000" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:onClick="withRatingBar"
+                android:text="Rate"
+                android:textSize="16sp" />
+
+        </TableRow>
+        
+        
+
+</TableLayout>
+</AbsoluteLayout>
+
+

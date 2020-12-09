@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
@@ -153,8 +152,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton imageButtonSeven= (ImageButton) findViewById(R.id.ButtonSeven);
+        imageButtonSeven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
         createchannel();
         makenoti("Selamat Datang di Aplikasi Kami", 1);
+
     }
 
     private void createchannel() {

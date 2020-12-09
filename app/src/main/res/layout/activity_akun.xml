@@ -103,7 +103,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="#3F51B5" />
+                android:background="#294E7D" />
 
             <EditText
                 android:id="@+id/editTextTime2"

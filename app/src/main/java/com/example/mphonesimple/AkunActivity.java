@@ -2,6 +2,7 @@ package com.example.mphonesimple;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -86,14 +89,33 @@ public class AkunActivity extends AppCompatActivity {
         buttonkirim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String datetime = editDate.getText().toString()+","+editTime.getText().toString();
+                AlertDialog.Builder builder = new AlertDialog.Builder(AkunActivity.this);
+                builder.setTitle("Dialog Standar");
+                builder.setMessage("Kirim ke List View?");
+                builder.setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
 
-                if(null!=datetime&&datetime.length()>0) {
-                    m_listItems.add(datetime);
+                                String datetime = editDate.getText().toString()+","+editTime.getText().toString();
 
-                m_adapter.notifyDataSetChanged();
-                    //((customlistview) (((ListView) findViewById(R.id.listView)).getAdapter())).notifyDataSetChanged();
-                }
+                                if(null!=datetime&&datetime.length()>0) {
+                                    m_listItems.add(datetime);
+
+                                    m_adapter.notifyDataSetChanged();
+                                    //((customlistview) (((ListView) findViewById(R.id.listView)).getAdapter())).notifyDataSetChanged();
+                                }
+
+                            }
+                        });
+                builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getApplicationContext(),
+                                android.R.string.no, Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setCancelable(false);
+                builder.show();
+
             }
         });
 
